@@ -22,7 +22,7 @@ export class StaticTokenDefinition {
 
     // Add WETH
     let tokenWETH = new StaticTokenDefinition(
-      Address.fromString('0x82af49447d8a07e3bd95bd0d56f35241523fbab1'),
+      Address.fromString('0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3'),
       'WETH',
       'Wrapped Ethereum',
       BigInt.fromI32(18)
@@ -31,7 +31,7 @@ export class StaticTokenDefinition {
 
     // USDC
     let tokenUSDC = new StaticTokenDefinition(
-      Address.fromString('0xff970a61a04b1ca14834a43f5de4533ebddb5cc8'),
+      Address.fromString('0x8fb1e3fc51f3b789ded7557e680551d93ea9d892'),
       'USDC',
       'USD Coin',
       BigInt.fromI32(6)
