@@ -10,10 +10,11 @@ const USDC_WETH_03_POOL = '0x73422b702706a95c3bd1d96de7526c3d864d9d6a'
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
-  WETH_ADDRESS // WETH
+  WETH_ADDRESS, // WETH
+  '0x8FB1E3fC51F3b789dED7557E680551d93Ea9d892' // USDC
 ]
 
-let MINIMUM_ETH_LOCKED = BigDecimal.fromString('4')
+let MINIMUM_ETH_LOCKED = BigDecimal.fromString('0')
 
 let Q192 = 2 ** 192
 export function sqrtPriceX96ToTokenPrices(sqrtPriceX96: BigInt, token0: Token, token1: Token): BigDecimal[] {
